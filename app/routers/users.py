@@ -3,7 +3,6 @@ from app.schemas.user import UserCreate, UserResponse, TokenResponse, UserLogin
 from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models.user import User
-from passlib.context import CryptContext
 from sqlalchemy import select
 from app.core.security import verify_password, hash_password, create_access_token
 
